@@ -1,0 +1,22 @@
+public class LinearQuestion {
+    public static int  linearSearch(int marks[],int key){
+        for(int i=0;i<marks.length;i++){
+            if(marks[i]==key){
+                return i;
+            }
+        }
+        return -1; // key is not exits in the array
+
+    }
+    public static void main(String[] args) {
+        int marks[]={2,4,6,8,10,12,14,16};
+        int key=10;
+        int index=linearSearch(marks, key);
+        if(index==-1){
+            System.out.println("Not found");
+        }else{
+            System.out.println("Key is at index :"+index);
+        }
+
+    }
+}
